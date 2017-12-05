@@ -1,3 +1,5 @@
+/* How many copies of the book titled The Lost Tribe are owned by the library branch whose name
+is"Sharpstown"? */
 Select Library_Branch.BranchName, Book.Title, Book_Copies.No_Of_Copies 
 From Book_Copies 
 Join Book On (Book_Copies.BookID = Book.BookID)
