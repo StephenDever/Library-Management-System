@@ -1,3 +1,7 @@
+/* For each book authored (or co-authored) by "Stephen King", retrieve the title and the number of
+copies owned by the library branch whose name is "Central"
+Now, create a stored procedure that will execute one or more of those queries, based on user
+choice. */
 CREATE PROCEDURE GetStephenKingBooksFromCentral
 AS
 SELECT Book.Title, Book_Authors.AuthorName, Book_Copies.No_Of_Copies, Library_Branch.BranchName
